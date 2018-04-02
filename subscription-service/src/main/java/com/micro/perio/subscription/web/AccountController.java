@@ -14,7 +14,7 @@ import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(name = "/api/v1")
+@RequestMapping(value = "/api/v1")
 public class AccountController {
 
     Logger logger = LoggerFactory.getLogger(AccountController.class);
@@ -28,7 +28,7 @@ public class AccountController {
         this.mailService= mailService;
     }
 
-    @PostMapping(name = "/register")
+    @PostMapping(value = "/register")
     public ResponseEntity register(@RequestBody PerioUser user){
 
         HttpHeaders textPlainHeaders = new HttpHeaders();

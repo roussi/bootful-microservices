@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: ${HOME}/Desktop/labo/micro-perio/config
+          uri: ${HOME}/Desktop/labo/micro-perio/bootful-microservices/config
 server:
   port: 8888
 
